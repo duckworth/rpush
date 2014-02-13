@@ -1,4 +1,4 @@
-#require 'active_record'
+require 'active_model'
 require 'multi_json'
 
 require 'rpush/version'
