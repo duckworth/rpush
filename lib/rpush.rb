@@ -6,7 +6,7 @@ require 'rpush/deprecation'
 require 'rpush/deprecatable'
 require 'rpush/logger'
 require 'rpush/multi_json_helper'
-require 'rpush/configuration'
+require 'rpush/reflection'
 
 module Rpush
   def self.init_orm
@@ -39,13 +39,7 @@ module Rpush
   require 'rpush/railtie' if defined?(Rails)
 end
 
-require 'rpush/version'
-require 'rpush/deprecation'
-require 'rpush/deprecatable'
-require 'rpush/logger'
-require 'rpush/multi_json_helper'
 require 'rpush/configuration'
-require 'rpush/reflection'
 require 'rpush/embed'
 require 'rpush/push'
 require 'rpush/apns_feedback'
